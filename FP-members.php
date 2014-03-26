@@ -110,7 +110,7 @@
 				add_submenu_page( 
 					$menu_slug, 
 					'Page Settings', 
-					'Pages', 
+					'Settings', 
 					'manage_options', 
 					'dovetail-page-settings', 
 					array( $this, 'fp_members_options_view' )
@@ -295,7 +295,7 @@
 					$restricted_page_id = get_option("fp_members_restricted_page_id");
 					$restricted_message = urlencode( get_option("dovetail_restricted_message") );
 					
-					if ( isset( $restricted_page_id  ) ) :
+					if ( isset( $restricted_page_id  ) && !empty( $restricted_page_id ) ) :
 						$protected_page = get_page( $restricted_page_id );
 					else :
 						$protected_page = get_page( get_option('page_on_front') );

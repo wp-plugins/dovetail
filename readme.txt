@@ -38,7 +38,13 @@ Dovetail's been lovingly crafted by [Factory Pattern](http://factorypattern.co.u
 
 == Changelog ==
 
+= 1.2.1 =
+
+* Fixed bug which created a redirect loop when page was protected and now protected page had been chosen in the settings
+* Changed the "Pages" menu item to "Settings"
+
 = 1.2 =
+
 * Published on the WordPress repository
 
 == Upgrade Notice ==
