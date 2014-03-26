@@ -27,6 +27,16 @@ Dovetail's been lovingly crafted by [Factory Pattern](http://factorypattern.co.u
 
 == Frequently Asked Questions ==
 
+= I want to theme the login pages. How do I do that? =
+
+Install ["Theme My Login"](http://wordpress.org/plugins/theme-my-login/). It's a great little plugin that does just that and it works very well with Dovetail.
+
+= Great. I'd love to have a customised signup form too. =
+
+We use [Gravity Forms](http://www.gravityforms.com/) with the [User Registration](http://www.gravityforms.com/add-ons/user-registration/) add on. Yes, it's paid for, but it's worth it if you want a great website! 
+
+If you're not wild about parting with your cash then Dovetail should work nicely with any other plugin which lets you theme the Wordpress user signup process.
+
 == Screenshots ==
 
 1. The dashboard lets you know how many members are on board
