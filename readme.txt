@@ -33,7 +33,7 @@ Install ["Theme My Login"](http://wordpress.org/plugins/theme-my-login/). It's a
 
 = Great. I'd love to have a customised signup form too. =
 
-We use [Gravity Forms](http://www.gravityforms.com/) with the [User Registration](http://www.gravityforms.com/add-ons/user-registration/) add on. Yes, it's paid for, but it's worth it if you want a great website! 
+We use [Gravity Forms](http://www.gravityforms.com/) with the [User Registration](http://www.gravityforms.com/add-ons/user-registration/) add on. Yes, it's paid for, but it's worth it if you want a great website!
 
 If you're not wild about parting with your cash then Dovetail should work nicely with any other plugin which lets you theme the Wordpress user signup process.
 
@@ -47,6 +47,10 @@ If you're not wild about parting with your cash then Dovetail should work nicely
 6. Restrict access to pages within the page editing screen.
 
 == Changelog ==
+
+= 1.2.2 =
+
+* Added a "Dovetail" menu to the admin bar with links to the plugin's admin page and the users page
 
 = 1.2.1 =
 
