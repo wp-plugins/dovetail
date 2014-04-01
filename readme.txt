@@ -37,6 +37,10 @@ We use [Gravity Forms](http://www.gravityforms.com/) with the [User Registration
 
 If you're not wild about parting with your cash then Dovetail should work nicely with any other plugin which lets you theme the Wordpress user signup process.
 
+= I need to skip checking whether a user can view a page on pages with a certain type; can I do that? =
+
+Just add "add_filter( "dovetail_skip_content_check", '__return_true', 10 );" (without the speech marks) above where it says "get_header" in the template file.
+
 == Screenshots ==
 
 1. The dashboard lets you know how many members are on board
@@ -47,6 +51,10 @@ If you're not wild about parting with your cash then Dovetail should work nicely
 6. Restrict access to pages within the page editing screen.
 
 == Changelog ==
+
+= 1.2.3 =
+
+* Added "dovetail_skip_content_check" filter, which allows theme developers to skip authorisation checks in certain page templates if they want to (e.g. add "add_filter( "dovetail_skip_content_check", '__return_true', 10 );" at the top of the template to skip the auth check)
 
 = 1.2.2 =
 

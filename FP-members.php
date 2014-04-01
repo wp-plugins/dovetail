@@ -282,6 +282,14 @@
 
 				$allowed_roles = get_post_meta( $post->ID, "available_roles", true );
 
+
+				// This allows theme developers to skip authorisation checks in certain page templates if they want to
+				$skip_check = apply_filters( "dovetail_skip_content_check", false, $post );
+				
+				if ( $skip_check ) {
+					return $content;
+				}
+
 				// No restriction; allow all to view
 				if ( empty( $allowed_roles ) )
 					return $content;
