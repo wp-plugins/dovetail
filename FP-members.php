@@ -11,11 +11,11 @@
 	 *
 	 *
 	 *	Plugin Name: Dovetail
-	 *	Plugin URI: http://factorypattern.co.uk/plugins/dovetail
+	 *	Plugin URI: https://rigorous-digital.co.uk/plugins/dovetail
 	 *	Description: Dovetail adds basic yet beautiful membership tools to your WordPress website. Use and enjoy.
-	 *	Author: Factory Pattern
-	 *	Version: 1.1
-	 *	Author URI: http://factorypattern.co.uk
+	 *	Author: Rigorous & Factory Pattern
+	 *	Version: 1.2.4
+	 *	Author URI: https://rigorous-digital.co.uk/author/admin
 	 */
 	if ( ! class_exists( "FP_Members" ) ) :
 
