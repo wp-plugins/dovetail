@@ -51,6 +51,10 @@ Just add "add_filter( "dovetail_skip_content_check", '__return_true', 10 );" (wi
 
 == Changelog ==
 
+= 1.2.5 =
+
+* Bugfix to previous release
+
 = 1.2.4 =
 
 * Fixed an issue where non-admins couldn't process AJAX requests
