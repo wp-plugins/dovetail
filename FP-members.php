@@ -83,8 +83,7 @@
 				/* Include the role functions	*/
 				include_once( plugin_dir_path( __FILE__ ) . 'classes/class.role-editor.php');
 				// Ban non-admins from viewing the admin area
-				error_log( stripos( $_SERVER['PHP_SELF'], '/wp-admin/admin-ajax.php' ) );
-				if ( ! current_user_can( 'manage_options' ) && stripos( $_SERVER['PHP_SELF'], '/wp-admin/admin-ajax.php' ) == false ) {
+				if ( ! current_user_can( 'manage_options' ) && stripos( $_SERVER['PHP_SELF'], '/wp-admin/admin-ajax.php' ) !== false ) {
 					wp_redirect( home_url() );
 					exit;
 				}
@@ -285,7 +284,7 @@
 
 				// This allows theme developers to skip authorisation checks in certain page templates if they want to
 				$skip_check = apply_filters( "dovetail_skip_content_check", false, $post );
-				
+
 				if ( $skip_check ) {
 					return $content;
 				}
