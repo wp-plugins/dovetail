@@ -17,7 +17,7 @@ Our idea is that Dovetail should compliment other plugins rather than just blind
 
 Right now Dovetail's fairly new, so there aren't any payment gateways. We're working on a PayPal one though with a view to eventually allow others to develop and payment gateway they choose and bolt it on.
 
-Dovetail's been lovingly crafted by [Factory Pattern](http://factorypattern.co.uk) in the UK to service our clients' membership needs; it was forged in the fire of client projects and tested in the often harsh real world. Install it, try it and let us know your ideas; we're all ears.
+Dovetail's been lovingly crafted by [Rigorous](https://rigorous-digital.co.uk) & [Factory Pattern](http://factorypattern.co.uk) in the UK to service our clients' membership needs; it was forged in the fire of client projects and tested in the often harsh real world. Install it, try it and let us know your ideas; we're all ears.
 
 == Installation ==
 
@@ -50,6 +50,10 @@ Just add "add_filter( "dovetail_skip_content_check", '__return_true', 10 );" (wi
 6. Restrict access to pages within the page editing screen.
 
 == Changelog ==
+
+= 1.2.4 =
+
+* Fixed an issue where non-admins couldn't process AJAX requests
 
 = 1.2.3 =
 
