@@ -4,7 +4,6 @@
 	require_once 'gateways/paypal/class.fp-paypal.php';
 	require_once 'classes/registration-actions.php';
 	require_once 'classes/class.shortcodes.php';
-	require_once dirname( __FILE__ ).'/../../../wp-includes/pluggable.php';
 
 	/**
 	 *	Dovetail
@@ -14,7 +13,7 @@
 	 *	Plugin URI: https://rigorous-digital.co.uk/plugins/dovetail
 	 *	Description: Dovetail adds basic yet beautiful membership tools to your WordPress website. Use and enjoy.
 	 *	Author: Rigorous & Factory Pattern
-	 *	Version: 1.2.5
+	 *	Version: 1.2.6
 	 *	Author URI: https://rigorous-digital.co.uk/author/admin
 	 */
 	if ( ! class_exists( "FP_Members" ) ) :
@@ -56,10 +55,7 @@
 
 				//add_filter( 'registration_redirect', 'fp_registration_pay' );
 
-				/*	Show admin bar only for admins and editors	*/
-				if ( !current_user_can('edit_posts') ) {
-				    add_filter('show_admin_bar', '__return_false');
-				}
+				add_action( 'plugins_loaded', 'dovetail_hide_adminbar' );
 
 				// Add the links to the admin bar
 				add_action( 'admin_bar_menu', array( &$this, 'dovetail_add_toolbar_menu' ), 999 );
@@ -67,6 +63,13 @@
 				//add_action('get_header', array( $this, 'dovetail_display_errors' ), 100 );
 
 				$shortcodes = new FP_Shortcodes();
+			}
+
+			function dovetail_hide_adminbar() {
+				/*	Show admin bar only for admins and editors */
+				if ( !current_user_can('administrator') ) {
+					add_filter('show_admin_bar', '__return_false');
+				}
 			}
 
 		    /**
@@ -83,11 +86,13 @@
 				/* Include the role functions	*/
 				include_once( plugin_dir_path( __FILE__ ) . 'classes/class.role-editor.php');
 
+				/*
 				// Ban non-admins from viewing the admin area
-				if ( ( !current_user_can( 'manage_options' ) ) && ( defined( 'DOING_AJAX' ) == false ) ) {
+				if ( ( !current_user_can( 'administrator' ) ) && ( defined( 'DOING_AJAX' ) == false ) ) {
 					wp_redirect( home_url() );
 					exit;
 				}
+				*/
 		    }
 
 			/**

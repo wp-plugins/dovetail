@@ -51,6 +51,10 @@ Just add "add_filter( "dovetail_skip_content_check", '__return_true', 10 );" (wi
 
 == Changelog ==
 
+= 1.2.6 =
+
+* Refactored code so that pluggable isn't included anymore. This was causing some issues with other plugins that needed to replace pluggable functions.
+
 = 1.2.5 =
 
 * Bugfix to previous release
