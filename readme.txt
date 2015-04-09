@@ -1,5 +1,5 @@
 === Plugin Name ===
-Contributors: rigorousrich
+Contributors: rigorousrich,factorysketcher
 Tags: admin, members, users, paypal, payments, ecommerce
 Requires at least: 3.0.1
 Tested up to: 4.1
@@ -50,6 +50,10 @@ Just add "add_filter( "dovetail_skip_content_check", '__return_true', 10 );" (wi
 6. Restrict access to pages within the page editing screen.
 
 == Changelog ==
+
+= 1.2.7 =
+
+* Added factorysketcher as an author
 
 = 1.2.6 =
 
