@@ -86,13 +86,11 @@
 				/* Include the role functions	*/
 				include_once( plugin_dir_path( __FILE__ ) . 'classes/class.role-editor.php');
 
-				/*
 				// Ban non-admins from viewing the admin area
 				if ( ( !current_user_can( 'administrator' ) ) && ( defined( 'DOING_AJAX' ) == false ) ) {
 					wp_redirect( home_url() );
 					exit;
 				}
-				*/
 		    }
 
 			/**

@@ -51,6 +51,10 @@ Just add "add_filter( "dovetail_skip_content_check", '__return_true', 10 );" (wi
 
 == Changelog ==
 
+= 1.2.8 =
+
+* Reintroduced code to stop non-admins from being able to access the dashboard
+
 = 1.2.7 =
 
 * Added factorysketcher as an author
