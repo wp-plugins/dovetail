@@ -13,7 +13,7 @@
 	 *	Plugin URI: https://rigorous-digital.co.uk/plugins/dovetail
 	 *	Description: Dovetail adds basic yet beautiful membership tools to your WordPress website. Use and enjoy.
 	 *	Author: Rigorous & Factory Pattern
-	 *	Version: 1.2.6
+	 *	Version: 1.2.8
 	 *	Author URI: https://rigorous-digital.co.uk/author/admin
 	 */
 	if ( ! class_exists( "FP_Members" ) ) :
